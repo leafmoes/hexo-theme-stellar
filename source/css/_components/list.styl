@@ -11,7 +11,9 @@
     line-height: 1.2
     font-size: $fsh4
     border-bottom: none
-    color: var(--text)
+    color: var(--text-1)
+    &:hover
+      color: var(--text-1)
     trans1 color
     @media screen and (max-width: $device-mobile)
       font-size: $fsh5
@@ -25,7 +27,6 @@
   margin: 1rem 0
   border-radius: $border-card
   background: var(--card)
-  hoverable-card()
   overflow: hidden
   z-index: 0
   
@@ -61,6 +62,8 @@
         object-fit: contain
       svg
         color: $c-red
+    .cap
+      margin-right: 1rem
 
 .post-list.post .post-card:hover
   img
